@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>National Sports Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* NAV CONTAINER */
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    list-style:none;
+
+    padding:0 20px;
+}
+
+/* NAV ITEMS */
+
+nav ul li{
+    position:relative;
+    margin:0 8px;
+}
+
+/* NAV LINKS */
+
+nav ul li a{
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:22px 26px;
+
+    color:white;
+    text-decoration:none;
+
+    font-size:1rem;
+    font-weight:500;
+    letter-spacing:0.5px;
+
+    transition:0.4s ease;
+
+    border-radius:12px;
+
+    overflow:hidden;
+}
+
+/* GLOW BACKGROUND */
+
+nav ul li a::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(0,94,255,0.8),
+    rgba(0,21,209,0.8)
+    );
+
+    z-index:-1;
+
+    opacity:0;
+
+    transform:scale(0.8);
+
+    transition:0.4s;
+    
+    border-radius:12px;
+}
+
+/* ANIMATED UNDERLINE */
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:8px;
+    left:50%;
+
+    width:0%;
+    height:2px;
+
+    background:white;
+
+    transition:0.4s ease;
+
+    transform:translateX(-50%);
+}
+
+/* HOVER EFFECT */
+
+nav ul li a:hover{
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+/* SHOW GLOW */
+
+nav ul li a:hover::before{
+
+    opacity:1;
+
+    transform:scale(1);
+}
+
+/* SHOW UNDERLINE */
+
+nav ul li a:hover::after{
+
+    width:60%;
+}
+
+/* ACTIVE PAGE */
+
+nav ul li a.active{
+
+    background:
+    linear-gradient(
+    135deg,
+    #005eff,
+    #0015d1
+    );
+
+    box-shadow:
+    0 0 20px rgba(0,94,255,0.6);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        padding:10px 0;
+    }
+
+    nav ul li{
+        width:100%;
+        text-align:center;
+        margin:5px 0;
+    }
+
+    nav ul li a{
+        padding:16px;
+    }
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://i.pinimg.com/originals/68/5d/8f/685d8f362f5d81f4d025d96fd64ea966.jpg');
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-family:'Orbitron',sans-serif;
+    letter-spacing:3px;
+    margin-bottom:20px;
+    text-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+.hero p{
+    max-width:700px;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+/* SPORTS SECTION */
+
+.sports-section{
+    padding:80px 40px;
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:50px;
+    color:#0015d1;
+    font-family:'Orbitron',sans-serif;
+}
+
+.sports-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    color:#0015d1;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    line-height:1.7;
+}
+
+/* INFO SECTION */
+
+.info-section{
+    padding:80px 50px;
+    background:
+    linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)),
+    url('https://wallpapertag.com/wallpaper/full/1/a/1/350829-widescreen-website-background-1920x1080-windows-xp.jpg');
+
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.info-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.info-box{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.info-box h2{
+    color:#0015d1;
+    margin-bottom:20px;
+    font-family:'Orbitron',sans-serif;
+}
+
+.info-box p,
+.info-box li{
+    line-height:1.9;
+}
+
+.info-box ol{
+    padding-left:20px;
+}
+
+/* VIDEO SECTION */
+
+.video-section{
+    padding:80px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://4kwallpapers.com/images/wallpapers/indian-flag-tricolour-flag-national-flag-flag-of-india-5k-3840x2160-1546.jpg');
+
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+
+.video-section iframe{
+    width:90%;
+    max-width:1000px;
+    height:500px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.4);
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    text-align:center;
+    gap:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .info-container{
+        grid-template-columns:1fr;
+    }
+
+    .video-section iframe{
+        height:300px;
+    }
+
+    footer{
+        flex-direction:column;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="Confirmation.html">Registration Form</a></li>
+<li><a href="Stadium.html">Stadiums</a></li>
+<li><a href="Contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+<h1>NATIONAL SPORTS AGENCY</h1>
+
+<p>
+Empowering athletes, building champions, and shaping the future of Indian sports through world-class infrastructure, training, and excellence.
+</p>
+</section>
+
+<!-- SPORTS CARDS -->
+
+<section class="sports-section">
+
+<h2 class="section-title">Featured Sports</h2>
+
+<div class="sports-grid">
+
+<div class="card">
+<img src="https://wallpapercave.com/wp/wp9264424.jpg">
+<div class="card-content">
+<h3>Cricket</h3>
+<p>Developing world-class cricket talent and strengthening India's dominance in international cricket.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.hindustantimes.com/img/2022/10/08/1600x900/IMG-20221008-WA0024_1665245049715_1665245054705_1665245054705.jpg">
+<div class="card-content">
+<h3>Kabaddi</h3>
+<p>Promoting indigenous sports and nurturing talented Kabaddi athletes across the nation.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://static.punemirror.com/full/95b50c7a-bd04-4d11-acbf-6d01e7ac9002.webp">
+<div class="card-content">
+<h3>Javelin</h3>
+<p>Supporting India's rising athletics stars with elite coaching and training facilities.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://m.economictimes.com/thumb/msid-93429302,width-1599,height-1065,resizemode-4,imgsize-67042/lakshya-sen.jpg">
+<div class="card-content">
+<h3>Badminton</h3>
+<p>Encouraging excellence in badminton through advanced academies and performance programs.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.thequint.com/thequint%2F2019-08%2F89e601da-d2b4-4d08-9c35-2aa37a1b21a3%2FAustralian_Open_Tennis__quintillion_webfeeds_10.jpg?auto=format%2Ccompress">
+<div class="card-content">
+<h3>Tennis</h3>
+<p>Building future tennis champions with professional-level infrastructure and coaching.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2024/08/untitled-design-2024-08-10t080846-1723257528.jpg">
+<div class="card-content">
+<h3>Wrestling</h3>
+<p>Strengthening India's wrestling legacy by supporting athletes at every level.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- INFORMATION SECTION -->
+
+<section class="info-section">
+
+<div class="info-container">
+
+<div class="info-box">
+
+<h2>Objectives</h2>
+
+<ol>
+<li>Promote and broad-base sports in the country.</li>
+<li>Identify and nurture sports talent.</li>
+<li>Achieve excellence at international competitions.</li>
+<li>Manage and develop sports infrastructure and stadiums.</li>
+</ol>
+
+<br>
+
+<h2>Vision</h2>
+
+<p>
+To lead India's sports development journey and achieve consistent international sporting success.
+</p>
+
+<br>
+
+<h2>Mission</h2>
+
+<p>
+To provide world-class infrastructure, training facilities, and coaching for athletes.
+</p>
+
+</div>
+
+<div class="info-box">
+
+<h2>Approach & Strategy</h2>
+
+<ol>
+<li>International collaboration for sporting excellence.</li>
+<li>Structured systems for talent identification.</li>
+<li>Focused regional sports development.</li>
+<li>Integrated framework for athlete training.</li>
+<li>Corporate involvement in sports academies.</li>
+<li>Improved coaching and supervision.</li>
+<li>Advanced scientific and technical support.</li>
+</ol>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- VIDEO -->
+
+<section class="video-section">
+
+<iframe
+src="https://www.youtube.com/embed/wTzAJ9aYS1s"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div>
+Copyright © 2025 Sports Authority of India
+</div>
+
+<div>
+Website Developed and Managed by Sports Authority of India
+</div>
+
+</footer>
+
+</body>
+</html>

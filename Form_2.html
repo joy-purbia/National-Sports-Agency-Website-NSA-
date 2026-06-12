@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <link rel="stylesheet" href="LAB 5.css">
+
+  <style>
+    
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 500;
+    padding: 100;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 210vh; 
+}
+
+.form-container {
+    background-color: rgba(228, 228, 228, 0.8); 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 63%;
+    max-width: 600px; 
+    }
+
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #000000;
+}
+
+.button:hover{
+    background-color: #3d3d3d;
+  }
+
+  body {
+  background-image: url("https://wallpaperaccess.com/full/343582.jpg") ;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+
+  </style>
+
+<div class="form-container">
+<form action="/action_page.php">
+
+  <h1 style="text-align: center;">National Sports Registration Forms [UNDER 18]</h1><br>
+  <h2>Payment details</h2>
+
+<fieldset><h4>Registration fees is Rs. 100/- (in rupees)</h4>
+  <center><img src="https://1.bp.blogspot.com/-dHN4KiD3dsU/XRxU5JRV7DI/AAAAAAAAAz4/u1ynpCMIuKwZMA642dHEoXFVKuHQbJvwgCEwYBhgL/s1600/qr-code.png" alt="QR Code" height="300" width="300">
+  <i>Head of National Sports department</i><br></center></fieldset><br><br>
+
+<fieldset>
+    <label for="ss">Upload Payment Screenshot (file format: jpeg/pdf) [Size --> 10KB to 1MB]:</label><br><br>
+
+    <label for="ss">Select a file:</label>
+    <input type="file" id="ss" name="ss" required>
+    </fieldset><br><br><br></form>
+
+    <button class="button" onclick="document.location='http://127.0.0.1:5500/LAB%205(1).html'">Back</button>
+
+    <form action="/action_page.php">
+
+      <input type="reset" value="Reset">
+
+      <input type="submit" value="Submit">
+      
+      </form>
+
+</div>
+</body>
+</html>

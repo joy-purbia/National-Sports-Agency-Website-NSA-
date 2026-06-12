@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<link rel="stylesheet" href="LAB 5.css">
+
+  <style>
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 500;
+    padding: 100;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 210vh; 
+}
+
+.form-container {
+    background-color: rgba(228, 228, 228, 0.8); 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 117%;
+    max-width: 600px; 
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #005fec;
+}
+
+  .button:hover{
+    background-color: #004bbd;
+  }
+
+  body {
+  background-image: url("https://wallpaperaccess.com/full/343582.jpg") ;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+
+  </style>
+
+<div class="form-container">
+<form action="/action_page.php">
+
+  <h1 style="text-align: center;">National Sports Registration Form [UNDER 18]</h1><br>
+  <h2>Personal details</h2>
+
+  <fieldset>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Joy" required><br><br><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Purbia" required>
+  </fieldset><br><br><br>
+
+  <fieldset>
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required >
+  </fieldset><br><br><br>
+                         
+  <fieldset>
+  <label for="contact">Contact No.</label><br>
+  <input type="tel" id="contact" name="contact" maxlength="10" minlength="10" placeholder="123*******" pattern="[0-9]{10}" required>
+  <br><br><br>
+
+  <label for="mail">Mail ID</label><br>
+  <input type="text" id="mail" name="mail" placeholder="abc@gmail.com">
+  </fieldset><br><br><br>
+
+  <fieldset>
+  <p>Age:</p>
+  <input type="radio" id="12" name="age" value="12">
+  <label for="12">12</label><br>
+  <input type="radio" id="13" name="age" value="13">
+  <label for="13">13</label><br>
+  <input type="radio" id="14" name="age" value="14">
+  <label for="14">14</label><br>
+  <input type="radio" id="15" name="age" value="15">
+  <label for="15">15</label><br>
+  <input type="radio" id="16" name="age" value="16">
+  <label for="16">16</label><br>
+  <input type="radio" id="17" name="age" value="17">
+  <label for="17">17</label><br>
+  <input type="radio" id="18" name="age" value="18">
+  <label for="18">18</label>
+  </fieldset><br><br><br>
+
+  <fieldset>
+  <label for="Gender">Gender:</label>
+  <input type="radio" id="MALE" name="MALE" value="MALE">
+  <label for="MALE">MALE</label>
+  <input type="radio" id="FEMALE" name="FEMALE" value="FEMALE">
+  <label for="FEMALE">FEMALE</label>
+  </fieldset><br><br><br>
+
+  <fieldset>
+    <label for="state">Choose your State:</label>
+    <select id="state" name="state">
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Bihar">Bihar</option>
+      <option value="Chattisgarh">Chattisgarh</option>
+      <option value="Goa">Goa</option>
+      <option value="Gujarat">Gujarat</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Himachal Pradesh">Himachal Pradesh</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Manipur">Manipur</option>
+      <option value="Meghalaya">Meghalaya</option>
+      <option value="Mizoram">Mizoram</option>
+      <option value="Nagaland">Nagaland</option>
+      <option value="Odisha">Odisha</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan" selected>Rajasthan</option>
+      <option value="Sikkim">Sikkim</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Telangana">Telangana</option>
+      <option value="Tripura">Tripura</option>
+      <option value="Uttarakhand">Uttarakhand</option>
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+      <option value="West Bengal">West Bengal</option>
+    </select>
+    </fieldset><br><br><br>
+
+    <fieldset><label for="health">Medical conditions (if any):</label><br>
+    <textarea name="message" rows="12" cols="50" placeholder="Like pulmonary, gastrointestinal, urological, and endocrine systems, as well as common infectious diseases........"></textarea>
+    </fieldset><br><br><br>
+
+    <input type="reset" value="Reset"><br>
+</form> 
+
+<button class="button" onclick="document.location='http://127.0.0.1:5500/LAB%205(1).html'">Next</button></div>
+
+</body>
+</html>

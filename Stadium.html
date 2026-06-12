@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>National Sports Agency - Stadiums</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+    ),
+
+    url('https://images.freecreatives.com/wp-content/uploads/2016/04/Blurred-Web-Backgrounds-HD-Wallpaper.jpg');
+
+    background-size:cover;
+    background-attachment:fixed;
+
+    color:white;
+}
+
+/* HEADER */
+
+.header{
+
+    text-align:center;
+
+    padding:80px 20px 50px;
+}
+
+.header h1{
+
+    font-size:4rem;
+
+    font-family:'Orbitron',sans-serif;
+
+    color:#00aaff;
+
+    letter-spacing:4px;
+
+    text-shadow:
+    0 0 20px rgba(0,170,255,0.7);
+
+    margin-bottom:20px;
+}
+
+.header p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:1.2rem;
+
+    color:#dddddd;
+
+    line-height:1.8;
+}
+
+/* STADIUM GRID */
+
+.stadium-container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(450px,1fr));
+
+    gap:40px;
+
+    padding-bottom:80px;
+}
+
+/* CARD */
+
+.stadium-card{
+
+    background:
+    rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(14px);
+
+    border:
+    1px solid rgba(255,255,255,0.2);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.4);
+
+    transition:0.5s ease;
+}
+
+/* CARD HOVER */
+
+.stadium-card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.02);
+
+    box-shadow:
+    0 20px 50px rgba(0,170,255,0.4);
+}
+
+/* IMAGE */
+
+.stadium-card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    transition:0.5s;
+}
+
+.stadium-card:hover img{
+
+    transform:scale(1.08);
+}
+
+/* CONTENT */
+
+.card-content{
+
+    padding:30px;
+}
+
+.card-content h2{
+
+    font-size:2rem;
+
+    color:#00aaff;
+
+    margin-bottom:20px;
+
+    font-family:'Orbitron',sans-serif;
+}
+
+.card-content p{
+
+    line-height:1.9;
+
+    color:#eeeeee;
+
+    margin-bottom:30px;
+
+    font-size:1rem;
+}
+
+/* BUTTON */
+
+.location-btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    background:
+    linear-gradient(
+    135deg,
+    #005eff,
+    #0015d1
+    );
+
+    transition:0.4s ease;
+
+    box-shadow:
+    0 0 20px rgba(0,94,255,0.5);
+}
+
+.location-btn:hover{
+
+    transform:
+    translateY(-4px);
+
+    box-shadow:
+    0 0 30px rgba(0,94,255,0.9);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:2.5rem;
+    }
+
+    .stadium-container{
+        grid-template-columns:1fr;
+    }
+
+    .stadium-card img{
+        height:250px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<section class="header">
+
+<h1>INDIAN STADIUMS</h1>
+
+<p>
+Explore India's most iconic cricket stadiums that have hosted legendary matches and unforgettable sporting moments.
+</p>
+
+</section>
+
+<!-- STADIUMS -->
+
+<section class="stadium-container">
+
+<!-- CARD 1 -->
+
+<div class="stadium-card">
+
+<img src="https://gujaratcricketassociation.com/wp-content/uploads/2020/02/stadium02.jpg">
+
+<div class="card-content">
+
+<h2>Narendra Modi Stadium</h2>
+
+<p>
+The Narendra Modi Stadium in Ahmedabad is the world's largest cricket stadium with a seating capacity of over 132,000 spectators. It hosts international matches, IPL games, and global cricket events.
+</p>
+
+<a
+href="https://maps.app.goo.gl/5si2wn5oXAoPQ3mGA"
+class="location-btn"
+target="_blank">
+
+View Location
+
+</a>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="stadium-card">
+
+<img src="https://www.mumbaiindians.com/static-assets/images/cssimages/banner-1.jpg">
+
+<div class="card-content">
+
+<h2>Wankhede Stadium</h2>
+
+<p>
+Located in Mumbai, Wankhede Stadium is one of India's most historic cricket grounds and hosted the unforgettable 2011 ICC Cricket World Cup Final victory.
+</p>
+
+<a
+href="https://maps.app.goo.gl/VT3KgiEUNcf4HWUXA"
+class="location-btn"
+target="_blank">
+
+View Location
+
+</a>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="stadium-card">
+
+<img src="http://3.bp.blogspot.com/-4VxcOFaUBoc/UBFB4y5YH7I/AAAAAAAAAjE/SZ4D85IOZQo/w1200-h630-p-nu/Eden+Gardens+Aerial+view.jpg">
+
+<div class="card-content">
+
+<h2>Eden Gardens</h2>
+
+<p>
+Established in 1864, Eden Gardens in Kolkata is one of the oldest and most iconic cricket stadiums in the world, known as the "Mecca of Indian Cricket."
+</p>
+
+<a
+href="https://maps.app.goo.gl/SWGyBXAEoh8EidJ87"
+class="location-btn"
+target="_blank">
+
+View Location
+
+</a>
+
+</div>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="stadium-card">
+
+<img src="https://tfiglobalnews.com/wp-content/uploads/2022/11/M_Chinnaswamy_Stadium_RCB_match.jpg">
+
+<div class="card-content">
+
+<h2>Chinnaswamy Stadium</h2>
+
+<p>
+Situated in Bengaluru, Chinnaswamy Stadium is famous for its electrifying IPL atmosphere and beautiful location surrounded by Cubbon Park.
+</p>
+
+<a
+href="https://maps.app.goo.gl/LavYB1acj2PqR25aA"
+class="location-btn"
+target="_blank">
+
+View Location
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

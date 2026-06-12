@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <link rel="stylesheet" href="LAB 5.css">
+
+  <style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 500;
+    padding: 100;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 210vh; 
+}
+
+.form-container {
+    background-color: rgba(228, 228, 228, 0.8); 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 64%;
+    max-width: 600px; 
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 10;
+    padding: 0;
+}
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 48.8%;
+  border-radius: 4px;
+}
+
+.button1 {background-color: #000000;}
+.button2 {background-color: #005fec;} 
+
+.button1:hover{
+    background-color: #3d3d3d;
+  }
+.button2:hover{
+    background-color: #004bbd;
+  }
+
+  body {
+  background-image: url("https://wallpaperaccess.com/full/343582.jpg") ;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+
+</style>
+
+<div class="form-container">
+<form action="/action_page.php">
+
+  <h1 style="text-align: center;">National Sports Registration Forms [UNDER 18]</h1><br>
+  <h2>Sports details</h2>
+
+<fieldset>
+  <label for="sports">Select your Sport(s):</label><br><br>
+  <input type="checkbox" id="cricket" name="cricket" value="cricket">
+  <label for="cricket">Cricket</label><br>
+  <input type="checkbox" id="football" name="football" value="football">
+  <label for="football">Football</label><br>
+  <input type="checkbox" id="volleyball" name="volleyball" value="volleyball">
+  <label for="volleyball">Volleyball</label><br>
+  <input type="checkbox" id="basketball" name="basketball" value="basketball">
+  <label for="basketball">Basketball</label><br>
+  <input type="checkbox" id="badminton" name="badminton" value="badminton">
+  <label for="badminton">Badminton</label><br>
+  <input type="checkbox" id="tennis" name="tennis" value="tennis">
+  <label for="tennis">Tennis</label><br>
+  <input type="checkbox" id="tabletennis" name="tabletennis" value="tabletennis">
+  <label for="tabletennis">Table Tennis</label><br>
+  <input type="checkbox" id="shooting" name="shooting" value="shooting">
+  <label for="shooting">Shooting</label><br>
+  <input type="checkbox" id="archery" name="archery" value="archery">
+  <label for="archery">Archery</label><br>
+  <input type="checkbox" id="athletics" name="athletics" value="athletics">
+  <label for="athletics">Athletics</label><br>
+  <input type="checkbox" id="swimming" name="swimming" value="swimming">
+  <label for="swimming">Swimming</label><br>
+  <input type="checkbox" id="javelinthrow" name="javelinthrow" value="javelinthrow">
+  <label for="javelinthrow">Javelin Throw</label><br>
+  <input type="checkbox" id="handball" name="handball" value="handball">
+  <label for="handball">Handball</label><br>
+  <input type="checkbox" id="chess" name="chess" value="chess">
+  <label for="chess">Chess</label><br>
+  <input type="checkbox" id="carrom" name="carrom" value="carrom">
+  <label for="carrom">Carrom</label>
+  </fieldset><br><br><br>
+
+  <fieldset>
+  <label for="tshirtSize">T-shirt Size:</label>
+    <select id="tshirtSize" name="tshirtSize">
+      <option value="s">Small</option>
+      <option value="m">Medium</option>
+      <option value="l">Large</option>
+      <option value="xl">Extra Large</option>
+    </select><br><br><br>
+
+    <label for="tshirtcolor">Select your T-shirt color:</label>
+  <input type="color" id="tshirtcolor" name="tshirtcolor">
+  </fieldset><br><br><br>
+
+  <input type="reset" value="Reset">
+    </form>
+    
+    <button class="button button1" onclick="document.location='http://127.0.0.1:5500/LAB%205.html'">Back</button>
+    <button class="button button2" onclick="document.location='http://127.0.0.1:5500/LAB%205(2).html'">Next</button></div>
+
+</body>
+</html>
