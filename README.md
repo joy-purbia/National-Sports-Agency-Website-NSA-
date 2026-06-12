@@ -8,3 +8,9 @@ Benefits & Advantages
 🔒 Ensures secure and reliable record management.
 🌐 Provides easy access through a modern, user-friendly web interface.
 🚀 Enhances overall efficiency and coordination within sports organizations.
+
+How to Run :-
+1) Clone or download the repository to your local machine.
+2) Navigate to the project directory.
+3) Open the homepage.html file in any modern web browser (Google Chrome, Firefox, Edge, etc.).
+4) The application will launch, and you can start exploring the National Sports Agency Management System.
