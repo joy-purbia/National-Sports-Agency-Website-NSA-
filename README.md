@@ -1,4 +1,4 @@
-National Sports Agency Management System is a web platform designed to simplify and digitize the management of sports organizations. It helps administrators efficiently manage athletes, coaches, events, registrations, and related data in one centralized system.
+National Sports Agency (NSA) is a web platform designed to simplify and digitize the management of sports organizations. It helps administrators efficiently manage athletes, coaches, events, registrations, and related data in one centralized system.
 
 Benefits & Advantages
 🏅 Centralized management of athletes, coaches, and events.
